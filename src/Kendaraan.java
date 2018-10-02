@@ -7,18 +7,20 @@ public class Kendaraan {
 
     public void cek(){
         switch (jenis){
-            case "Motor":
+            case "motor":
                 System.out.println("- Area Parkir motor");
                 System.out.println("- Area Parkir mobil");
                 System.out.println("- Area Parkir bus");
                 break;
-            case "Mobil":
+            case "mobil":
                 System.out.println("- Area Parkir mobil");
                 System.out.println("- Area Parkir bus");
                 break;
-            case "Bus":
+            case "bus":
                 System.out.println("- Area Parkir bus");
                 break;
+            default:
+                System.out.println("Input salah");
         }
     }
 }
