@@ -1,5 +1,12 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
-        Kendaraan k = new Kendaraan("Bus");
+        String jenis;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Jenis Kendaraan: ");
+        jenis = s.next();
+        Kendaraan k = new Kendaraan(jenis);
+        k.cek();
     }
 }
